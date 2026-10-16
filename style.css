@@ -1,0 +1,377 @@
+/* General Page Styling */
+body {
+    background-color: #DFF5E1;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Main Portfolio Heading */
+#id1 {
+    text-align: center;
+    color: #245C3A;
+    margin-bottom: 20px;
+}
+
+/* Profile Photo */
+img {
+    display: block;
+    margin: 0 auto 25px;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+/* Navigation Links */
+.navbar a {
+    color: #245C3A;
+    text-decoration: none;
+    padding: 10px 12px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Navigation Hover Effect */
+.navbar a:hover {
+    background-color: #C8E6C9;
+    color: #163D25;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Target Spacing */
+section[id],
+article[id] {
+    scroll-margin-top: 20px;
+}
+
+/* Horizontal Lines */
+hr {
+    border: none;
+    border-top: 2px solid #A5D6A7;
+    margin: 25px 0;
+}
+
+/* General Section Styling */
+.section {
+    margin: 25px 0;
+    padding: 10px;
+}
+
+/* Section Headings */
+h2 {
+    color: #245C3A;
+    margin-bottom: 18px;
+}
+
+/* ==================================
+   SIDE-BY-SIDE BOX LAYOUT
+   Personal Info + Education
+   Technical Skills + Hobbies
+   ================================== */
+
+.two-column-section {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+    margin: 30px 0;
+}
+
+/* All Four Information Boxes */
+.info-box {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    border: 2px solid #81C784;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+/* Box Headings */
+.info-box h2 {
+    text-align: center;
+    background-color: #C8E6C9;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Personal Information Rows */
+.personal-info div {
+    display: grid;
+    grid-template-columns: minmax(100px, 0.9fr) 12px minmax(0, 1.1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.personal-info strong {
+    font-weight: bold;
+}
+
+.personal-info span:nth-child(2) {
+    text-align: center;
+}
+
+/* Education Rows */
+.education-info div {
+    display: grid;
+    grid-template-columns: minmax(75px, 0.7fr) 12px minmax(0, 1.3fr);
+    gap: 5px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.education-info strong {
+    font-weight: bold;
+}
+
+.education-info span:nth-child(2) {
+    text-align: center;
+}
+
+/* General Links */
+a {
+    color: #1769AA;
+}
+
+a:hover {
+    color: #0D47A1;
+}
+
+/* Academic Documents */
+.document-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.document-item {
+    background-color: white;
+    border-left: 5px solid #4CAF50;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.document-item h3 {
+    margin: 0 0 8px;
+    color: #245C3A;
+}
+
+/* Academic Performance Table */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.performance-table {
+    width: 85%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 17px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Table Caption */
+.performance-table caption {
+    font-size: 19px;
+    font-weight: bold;
+    color: #245C3A;
+    padding: 12px;
+}
+
+/* Table Header */
+.performance-table thead {
+    background-color: #2E7D32;
+    color: white;
+}
+
+.performance-table th {
+    padding: 16px 20px;
+    border: 1px solid #A5D6A7;
+}
+
+/* Table Cells */
+.performance-table td {
+    padding: 16px 20px;
+    border: 1px solid #A5D6A7;
+}
+
+/* Alternating Row Colors */
+.performance-table tbody tr:nth-child(odd) {
+    background-color: #E8F5E9;
+}
+
+.performance-table tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+/* Table Hover Effect */
+.performance-table tbody tr:hover {
+    background-color: #C8E6C9;
+}
+
+/* Lists Inside Skills and Hobbies Boxes */
+.info-box ul,
+.info-box ol {
+    padding-left: 25px;
+}
+
+.info-box li {
+    margin-bottom: 7px;
+}
+
+/* Detail Form */
+.detail-form {
+    max-width: 600px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #A5D6A7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.detail-form input[type="text"],
+.detail-form input[type="email"],
+.detail-form select {
+    padding: 10px;
+    border: 1px solid #A5D6A7;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.detail-form fieldset {
+    border: 1px solid #A5D6A7;
+    border-radius: 7px;
+    margin: 15px 0;
+    padding: 12px;
+}
+
+.detail-form fieldset label {
+    margin-right: 15px;
+}
+
+.detail-form button {
+    background-color: #2E7D32;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.detail-form button:hover {
+    background-color: #1B5E20;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 35px;
+    padding: 15px;
+    background-color: #245C3A;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+
+    /* Stack boxes on smaller screens */
+    .two-column-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+
+    /* Make the table fit smaller screens */
+    .performance-table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .performance-table th,
+    .performance-table td {
+        padding: 10px 8px;
+    }
+
+    .detail-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .navbar {
+        gap: 5px;
+    }
+
+    .navbar a {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .info-box {
+        padding: 14px;
+    }
+
+    .personal-info div {
+        grid-template-columns: minmax(85px, 0.9fr) 10px minmax(0, 1.1fr);
+        font-size: 14px;
+    }
+
+    .education-info div {
+        grid-template-columns: minmax(65px, 0.7fr) 10px minmax(0, 1.3fr);
+        font-size: 14px;
+    }
+}
